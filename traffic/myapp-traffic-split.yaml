@@ -1,11 +1,11 @@
 apiVersion: networking.k8s.io/v1beta1
 kind: TrafficSplit
 metadata:
-  name: my-app-split
+  name: myapp-split
 spec:
-  service: my-app-service
+  service: myapp-service
   backends:
-  - serviceName: my-app-v1
+  - serviceName: myapp-v1
     weight: 50
-  - serviceName: my-app-v2
+  - serviceName: myapp-v2
     weight: 50
